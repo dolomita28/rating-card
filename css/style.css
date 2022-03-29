@@ -95,10 +95,15 @@ h1,h2{
 
 .btn-submit{    
     width: 100%;    
-    color: var(--Orange);
+    background-color: var(--Orange);
+    color: var(--white);
     text-align: center;
     border-radius: 2rem;
     text-transform: uppercase;    
+}
+.btn-submit:hover,.btn-submit:focus{
+    background-color: var(--white);
+    color: var(--Orange);
 }
 .score{
     padding: 1rem 2rem;
@@ -113,7 +118,7 @@ h1,h2{
     margin:0 0.5rem;
 }
 .hidden{
-
+    display: none;
 }
 
   .attribution { font-size: 11px; text-align: center; margin-top:10rem; color:var(--light-grey)}
@@ -122,22 +127,20 @@ h1,h2{
   /* RESPONSIVE */
   @media only screen and (max-width:600px) {
        
-    .calculator{
-        background-color: var(--white);
-        display: grid;
-        grid-template-columns: 1fr;        
-        border-radius: 2rem;
-        padding: 2rem;
-        justify-content: center;
+    .card{
+        width: 90vw;
     } 
-    
-    .calculator-left{            
-        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem);        
-    } 
-    .btn-percentages{        
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(3,4rem);           
+    .btn{
+        font-size: 1.8rem;        
     }
-    
-    
+    .btn-round{
+        width: 5rem;
+        height: 5rem;       
+    }
+    .desc{        
+        font-size: 1.5rem;
+    }
+    .icon-star{
+        padding: 1.7rem;
+    }
   }
