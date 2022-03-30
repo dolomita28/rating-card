@@ -4,6 +4,7 @@ const cards = document.querySelectorAll('.card');
 const score = document.querySelector('.score');
 
 const updateScore = (scoreTxt) => {
+    score.innerHTML = '';
     score.insertAdjacentHTML('beforeend', scoreTxt)
 }
 
